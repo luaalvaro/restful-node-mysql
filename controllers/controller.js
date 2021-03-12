@@ -50,6 +50,8 @@ const updateUser = async (req, res) => {
     if (address) updateUser.address = address
     if (description) updateUser.description = description
 
+    if (!name && !dateOfBirth && !address && !description) return res.status(400).json({ success: false, message: "You need to update someone field" })
+
     // Check if date it's valid
     if (dateOfBirth && !checkDate(dateOfBirth)) return res.status(400).json({ success: false, message: "Date format must be 'YYYY/MM/DD'" })
 
