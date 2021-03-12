@@ -9,9 +9,9 @@ const { getAllUsers, createNewUser, updateUser, deleteUser } = require('../contr
     router.post('/', createNewUser)
 
     // Update user
-    router.put('/update', updateUser)
+    router.put('/update/:id', updateUser)
 
     // Delete user
-    router.delete('/delete', deleteUser)
+    router.delete('/delete/:id', deleteUser)
 
 module.exports = router
