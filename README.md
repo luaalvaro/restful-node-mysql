@@ -49,10 +49,9 @@ CRUD
 // AT ADDRESS, YOU CAN WRITE ANY STRING, BUT IF YOU INSERT CEP ONLY NUMBERS (12345678), THE APPLICATION WILL GET SEARCH AT BRASIL API, AND RETURN A FULL ADDRESS
 ```
 ```JS
-'/api/update' (PUT)
+'/api/update/ID' (PUT)
 
 {
-    id: 2,
     name: "User name",
     dateOfBirth: "YYYY/MM/DD", // !!!  IMPORTANT  !!!
     address: "",
@@ -66,11 +65,8 @@ CRUD
 // AT ADDRESS, YOU CAN WRITE ANY STRING, BUT IF YOU INSERT CEP ONLY NUMBERS (12345678), THE APPLICATION WILL GET SEARCH AT BRASIL API, AND RETURN A FULL ADDRESS
 ```
 ```JS
-'/api/delete' (DELETE)
+'/api/delete/ID' (DELETE)
 
-{
-   id: 2
-}
 
 // Delete a user
 ```
